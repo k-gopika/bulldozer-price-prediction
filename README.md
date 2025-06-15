@@ -22,11 +22,14 @@ This project predicts the sale price of bulldozers and heavy machinery using his
 - Random Forest Regressor with basic preprocessing.
 - Optionally compares against benchmark models.
 
----
+## Approach
+- Cleaned data: removed high-cardinality object columns, handled missing values.
+- Used `RandomForestRegressor` to train on `Train.csv`.
+- Evaluated using RMSLE on `Valid.csv` vs `ValidSolution.csv`.
+- Final predictions saved in `test_predictions.csv`.
 
-Created for the Blue Book Pricing Challenge at Fast Iron.
----
-#Zomato dataset 
+  
+## Mini Assignment - Zomato Dataset
 - `Zomato.ipynb`: Google Colab notebook with code for Zomato dataset
 
 
