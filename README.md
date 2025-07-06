@@ -1,35 +1,28 @@
-# Bulldozer Price Prediction
+# Deep Learning Assignments – Deepflow
 
-This project predicts the sale price of bulldozers and heavy machinery using historical auction data provided by Fast Iron.
+This repository contains submissions for Deepflow project.
 
-## Project Files
+## 🔹 Major Assignments
 
-- `Train.csv`, `Valid.csv`, `Test.csv`: Input datasets
-- `TrainAndValid.csv`: Combined data for training
-- `ValidSolution.csv`: Ground truth for validation
-- `Bulldozer Price Prediction.ipynb`: Google Colab notebook with code
-- `test_predictions.csv`: Final submission predictions
-- `Data Dictionary.xlsx`: Feature descriptions
-- `Machine Appendix.xlsx`: Equipment metadata
-- `median_benchmark.csv`, `random_forest_benchmark_test.csv`: Benchmark files
+### Major Assignment 1 – Bulldozer Price Prediction
+- Task: Predict price category using structured data (regression/classification hybrid).
+- File: `Major_Assignment_1/Bulldozer Price Prediction.ipynb`
+- Output: `test_predictions.csv`
+- More: `README_MA1.md`
 
-## Evaluation Metric
+### Major Assignment 2 – Dog Breed Identification
+- Task: Classify dog images into 120 breeds using transfer learning.
+- Base Model: MobileNetV2
+- File: `Major_Assignment_2/dog_breed_MA2.ipynb`
+- Model: `cnn_model.h5`
+- Output: `submission.csv`
+- More: `README_MA2.md`
 
-- Root Mean Squared Logarithmic Error (RMSLE)
+## 🔹 Mini + Weekly Assignments
 
-## Model
+- `Mini_Assignment_1/Zomato.ipynb`
+- `Assignments_Week4/`
+- `Assignments_Week5/`
 
-- Random Forest Regressor with basic preprocessing.
-- Optionally compares against benchmark models.
-
-## Approach
-- Cleaned data: removed high-cardinality object columns, handled missing values.
-- Used `RandomForestRegressor` to train on `Train.csv`.
-- Evaluated using RMSLE on `Valid.csv` vs `ValidSolution.csv`.
-- Final predictions saved in `test_predictions.csv`.
-
-  
-## Mini Assignment - Zomato Dataset
-- `Zomato.ipynb`: Google Colab notebook with code for Zomato dataset
-
+---
 
